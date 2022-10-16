@@ -1,3 +1,7 @@
+-- Sample strategy. Has been tweaked slightly. Timings and positions were not changed.
+-- Recorded version of strat found here: https://docs.google.com/document/d/11CAjui7uo15EfurOoOnxTlc4GrENaWWnYDM8PEWq2jM
+-- Works as of game version v1.4.0a at roughly $55/minute in game.
+
 local pgtd = loadstring(game:HttpGet("https://raw.githubusercontent.com/usamiername/pgtd-replayer/main/minified.lua"))()
 pgtd.set("Abandoned Outskirts", 2, {"Impossible", "Speedrun", "Hellspeed",})
 pgtd.placeTower("Berserker", "nil", Vector3.new(-201.88265991210938, 21.599227905273438, -56.500389099121094), Vector3.new(-0.405853271484375, 1.8636322021484375, -10.385581970214844), game.Workspace.Map.Placement:GetChildren()[24], 0)
