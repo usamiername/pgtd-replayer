@@ -1,9 +1,5 @@
 local pgtd = loadstring(game:HttpGet("https://raw.githubusercontent.com/usamiername/pgtd-replayer/main/minified.lua"))()
-pgtd.set(
-    "Abandoned Outskirts",
-    2,
-    {"Impossible", "Speedrun", "Hellspeed"}
-)
+pgtd.set("Abandoned Outskirts", 2, {"Impossible", "Speedrun", "Hellspeed",})
 pgtd.placeTower("Berserker", "nil", Vector3.new(-201.88265991210938, 21.599227905273438, -56.500389099121094), Vector3.new(-0.405853271484375, 1.8636322021484375, -10.385581970214844), game.Workspace.Map.Placement:GetChildren()[24], 0)
 pgtd.useAbility("Jukebox", Vector3.new(-197.5226287841797, 21.599227905273438, -51.319026947021484), Vector3.new(3.9541778564453125, 1.8636322021484375, -5.204219818115234), game.Workspace.Map.Placement:GetChildren()[24], 0)
 pgtd.upgradeTower(2, "Wave Cash",  0)
