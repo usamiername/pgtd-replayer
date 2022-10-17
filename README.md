@@ -15,3 +15,5 @@ Not adjusted for lag - efficacy of the script depends on your lag /!\\
 Somewhat autoexec friendly - can crash but there are SOME countermeasures against it.
 
 Did not test for bugs. If you find one, let me know.
+
+I dedicate this to a friend in the game's discord that banned me for reporting a video of Ronnie McNutt blowing his head off. Cheers!
