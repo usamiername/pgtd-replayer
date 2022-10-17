@@ -1,6 +1,10 @@
 -- Sample strategy. Has been tweaked slightly. Timings and positions were not changed.
 -- Recorded version of strat found here: https://docs.google.com/document/d/11CAjui7uo15EfurOoOnxTlc4GrENaWWnYDM8PEWq2jM
 -- Works as of game version v1.4.0a at roughly $55/minute in game.
+-- Requires following towers: Berserker, Kill Stealer, Exploiter, Hitman
+-- Requires following weapons: Automatic Peacemaker, Golden Friend, Secret Forces Rifle, Prototype
+-- Requires following abilities: Energy Shield, Firework, Jukebox, Mine
+-- Total cost of above: $26,850
 
 local pgtd = loadstring(game:HttpGet("https://raw.githubusercontent.com/usamiername/pgtd-replayer/main/minified.lua"))()
 pgtd.set("Abandoned Outskirts", 2, {"Impossible", "Speedrun", "Hellspeed",})
