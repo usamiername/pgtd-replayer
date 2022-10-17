@@ -10,5 +10,5 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/usamiername/pgtd-repl
 
 Strat will then be saved to the workspace folder of your executor. (./recorded-pgtd.lua)
 
-Not adjusted for lag - efficacy of the script depends on your lag /!\\
+Not adjusted for lag - efficacy of the script depends on your lag /!\\n
 Somewhat autoexec friendly - can crash but there are SOME countermeasures against it.
