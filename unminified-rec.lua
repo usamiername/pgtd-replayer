@@ -23,6 +23,14 @@ function getCurrentTime()
     return math.floor((workspace:GetServerTimeNow()-startTimer)*100)/100 
 end
 
+function getTrueTowers()
+    local new = {}
+    for i,v in pairs(workspace.Map.Towers:GetChildren()) do 
+        if v.Name ~= "Mine" then 
+            table.insert(new, v) end 
+    end return new
+end
+
 local modCors = {
     ["Stronger Enemies"] = "EnemyHealth",
     ["Panic Mode"] = "OneHealth",
@@ -50,7 +58,6 @@ for v in string.gmatch(workspace.Configuration.ModifierNames.Value, "[^/]+") do
     appendfile("recorded_pgtd.lua", "\"" .. modCors[v] .. "\",")
 end
 appendfile("recorded_pgtd.lua", "})\n")
-
 
 local mt = getrawmetatable(game)
 local old = mt.__namecall
@@ -102,7 +109,7 @@ mt.__namecall = newcclosure(function(self, ...)
     elseif method == "FireServer" and tostring(self) == "Action" then
         spawn(function()
             if args[1] == "Upgrade" then
-                for i,v in pairs(workspace.Map.Towers:GetChildren()) do
+                for i,v in pairs(getTrueTowers()) do
                     if self.Parent == v then
                         if game.Players.LocalPlayer.Cash.Value >= getPriceOfUpgrade(self.Parent, args[2]) then
                             if workspace.Configuration.Wave.Value == 0 then
@@ -114,7 +121,7 @@ mt.__namecall = newcclosure(function(self, ...)
                     end
                 end
             elseif args[1] == "Sell" then
-                for i,v in pairs(workspace.Map.Towers:GetChildren()) do
+                for i,v in pairs(getTrueTowers()) do
                     if self.Parent == v then
                         if workspace.Configuration.Wave.Value == 0 then
                            appendfile("recorded_pgtd.lua", "pgtd.sellTower(" .. tostring(i) ..",  0)\n")
@@ -124,7 +131,7 @@ mt.__namecall = newcclosure(function(self, ...)
                     end
                 end
             elseif args[1] == "Targetting" then
-                for i,v in pairs(workspace.Map.Towers:GetChildren()) do
+                for i,v in pairs(getTrueTowers()) do
                     if self.Parent == v then
                         if workspace.Configuration.Wave.Value == 0 then
                            appendfile("recorded_pgtd.lua", "pgtd.changeTarget(" .. tostring(i) ..", " .. args[2] ..",  0)\n")
