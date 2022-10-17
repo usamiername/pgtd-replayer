@@ -17,3 +17,7 @@ Somewhat autoexec friendly - can crash but there are SOME countermeasures agains
 Did not test for bugs. If you find one, let me know.
 
 I dedicate this to a friend in the game's discord that banned me for reporting a video of Ronnie McNutt blowing his head off. Cheers!
+
+Mental illness:
+
+![](https://i.imgur.com/DR9G2SD.png)
