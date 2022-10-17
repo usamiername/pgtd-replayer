@@ -1,5 +1,5 @@
 repeat wait() until game:IsLoaded()
-wait(3)
+wait(7)
 if game.ReplicatedStorage:FindFirstChild("EventMatchmakingRemotes") then
     local pgtd = {}
     pgtd.set = function(map, difficulty, modifiers)
@@ -26,7 +26,6 @@ if game.ReplicatedStorage:FindFirstChild("EventMatchmakingRemotes") then
     end
     return pgtd
 else
-    wait(3)
     local vu = game:GetService("VirtualUser")
     game:GetService("Players").LocalPlayer.Idled:connect(function()
         vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
