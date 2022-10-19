@@ -1,6 +1,7 @@
 -- Sample strategy. Has been tweaked slightly. Timings and positions were not changed.
 -- Recorded version of strat found here: https://docs.google.com/document/d/11CAjui7uo15EfurOoOnxTlc4GrENaWWnYDM8PEWq2jM
 -- Works as of game version v1.4.0a at roughly $55/minute in game.
+-- This strat does NOT work as a triumph strat after v1.4.0b. However, for money, it is still a decent option at $2,400 per hour.
 -- Requires following towers: Berserker, Kill Stealer, Exploiter, Hitman
 -- Requires following weapons: Automatic Peacemaker, Golden Friend, Secret Forces Rifle, Prototype
 -- Requires following abilities: Energy Shield, Firework, Jukebox, Mine
