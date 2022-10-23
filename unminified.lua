@@ -3,16 +3,15 @@ wait(7)
 if game.ReplicatedStorage:FindFirstChild("EventMatchmakingRemotes") then
     local pgtd = {}
     pgtd.set = function(map, difficulty, modifiers)
-        for i,v in pairs(modifiers) do if not v then modifiers[i] = "" end end
         game.ReplicatedStorage.EventMatchmakingRemotes.createparty:FireServer(
             {
             	["Difficulty"] = difficulty,
             	["Code"] = "",
             	["Map"] = map,
             	["ModNames"] = "",
-            	["Modifier1"] = modifiers[1],
-            	["Modifier2"] = modifiers[2],
-            	["Modifier3"] = modifiers[3]
+            	["Modifier1"] = (modifiers[1] and modifiers[1] or ""),
+            	["Modifier2"] = (modifiers[2] and modifiers[2] or ""),
+            	["Modifier3"] = (modifiers[3] and modifiers[3] or "")
             }
         )
         game.ReplicatedStorage.EventParties.DescendantAdded:Connect(function(gm)
