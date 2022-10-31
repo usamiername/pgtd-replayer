@@ -6,8 +6,8 @@ if game.ReplicatedStorage:FindFirstChild("EventMatchmakingRemotes") then
         game.ReplicatedStorage.EventMatchmakingRemotes.createparty:FireServer(
             {
             	["Difficulty"] = difficulty,
-            	["Code"] = "",
-            	["Map"] = (code and code or ""),
+            	["Code"] = (code and code or ""),
+            	["Map"] = map,
             	["ModNames"] = "",
             	["Modifier1"] = (modifiers[1] and modifiers[1] or ""),
             	["Modifier2"] = (modifiers[2] and modifiers[2] or ""),
