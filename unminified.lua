@@ -2,12 +2,12 @@ repeat wait() until game:IsLoaded()
 wait(7)
 if game.ReplicatedStorage:FindFirstChild("EventMatchmakingRemotes") then
     local pgtd = {}
-    pgtd.set = function(map, difficulty, modifiers)
+    pgtd.set = function(map, difficulty, modifiers, code)
         game.ReplicatedStorage.EventMatchmakingRemotes.createparty:FireServer(
             {
             	["Difficulty"] = difficulty,
             	["Code"] = "",
-            	["Map"] = map,
+            	["Map"] = (code and code or ""),
             	["ModNames"] = "",
             	["Modifier1"] = (modifiers[1] and modifiers[1] or ""),
             	["Modifier2"] = (modifiers[2] and modifiers[2] or ""),
