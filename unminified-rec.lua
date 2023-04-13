@@ -51,7 +51,8 @@ local modCors = {
     ["Sandbox"] = "Sandbox",
     ["Hellspeed"] = "Hellspeed",
     ["Mega Stuns"] = "MegaStuns",
-    ["Sabotaged Gadgets"] = "SabotagedGadgets"
+    ["Sabotaged Gadgets"] = "SabotagedGadgets",
+    ["Normal"] = "Normal"
 }
 writefile("recorded_pgtd.lua", "local pgtd = loadstring(game:HttpGet(\"https://raw.githubusercontent.com/usamiername/pgtd-replayer/main/minified.lua\"))()\npgtd.set(\"".. workspace.Configuration.MapName.Value .. "\", " .. tostring(workspace.Difficulty.Value) .. ", {")
 for v in string.gmatch(workspace.Configuration.ModifierNames.Value, "[^/]+") do
